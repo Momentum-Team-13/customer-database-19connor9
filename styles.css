@@ -1,12 +1,15 @@
-#customerList {
+#customer-list {
     border: 2px solid salmon;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .customer {
-    /*margin-left: 5px;
+
+    margin-left: 5px;
     margin-right: 5px;
-    height: 400px;
-    width: 400px;
-    border-style: solid; */
-    background-color: aquamarine;
+    margin-bottom: 5px;
+    width: 32%;
+    background-color: rgb(82, 189, 154);
 }

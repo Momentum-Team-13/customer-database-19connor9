@@ -47,14 +47,15 @@ for (let customer of customers) {
 
     let birthElement = document.createElement('div');
     birthElement.classList.add("5", "f4-ns", "mv0");
-    // console.log(DataTransfer.toISO(customer.dob.date))
-    birthElement.innerText = `Birthday: ${customer.dob.date}`
+    let dobFormat = moment(customer.dob.date).format('MMM D YYYY');
+    birthElement.innerText = `Birthday: ${dobFormat}`
     contentElement.appendChild(birthElement);
     customerList.appendChild(customerElement);
 
     let joinedElement = document.createElement('div');
     joinedElement.classList.add("5", "f4-ns", "mv0");
-    joinedElement.innerText = `Joined: ${customer.registered.date}`
+    let joinedFormat = moment(customer.registered.date).format('MMM D YYYY')
+    joinedElement.innerText = `Joined: ${joinedFormat}`
     contentElement.appendChild(joinedElement);
     customerList.appendChild(customerElement);
 
