@@ -1,0 +1,12 @@
+#customerList {
+    border: 2px solid salmon;
+}
+
+.customer {
+    /*margin-left: 5px;
+    margin-right: 5px;
+    height: 400px;
+    width: 400px;
+    border-style: solid; */
+    background-color: aquamarine;
+}
